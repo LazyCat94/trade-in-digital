@@ -66,10 +66,6 @@ main {
   padding: 0 32px;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 /* ═══════════════════ TOPBAR ═══════════════════ */
 .topbar {
   position: sticky;
@@ -315,12 +311,90 @@ main {
   font-size: 26px;
 }
 
+.carousel-wrap {
+  position: relative;
+}
+
 .carousel-track {
   display: flex;
   gap: 16px;
   overflow-x: auto;
   padding: 6px 6px 20px;
   scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.carousel-track:hover {
+  scrollbar-color: rgba(23, 29, 53, 0.25) transparent;
+}
+
+.carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel-track::-webkit-scrollbar-button {
+  display: none;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.carousel-track:hover::-webkit-scrollbar-thumb {
+  background: rgba(23, 29, 53, 0.25);
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 105px;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  background: rgba(255, 253, 249, 0.92);
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 4px 14px rgba(23, 29, 53, 0.12);
+  transition: opacity 0.2s, background 0.2s;
+}
+
+.carousel-arrow.left {
+  left: -10px;
+}
+
+.carousel-arrow.right {
+  right: -10px;
+}
+
+.carousel-wrap:hover .carousel-arrow,
+.carousel-arrow:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-arrow:hover {
+  background: var(--gold);
+}
+
+@media (hover: none) {
+  .carousel-arrow {
+    display: none;
+  }
 }
 
 .game-card {

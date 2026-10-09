@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 
 /* ═══════════════════ i18n ═══════════════════ */
 const i18n = {
@@ -15,6 +15,8 @@ const i18n = {
     instructions: "Choisissez un jeu ci-dessous, puis ajustez le curseur pour simuler une revente.",
     carouselLabel: "Bibliothèque",
     carouselTitle: "Choisissez un jeu",
+    carouselPrev: "Jeux précédents",
+    carouselNext: "Jeux suivants",
     newPriceLabel: "Prix neuf",
     resaleLabel: "Prix de revente",
     digitalSplitTitle: "Revente numérique",
@@ -65,6 +67,8 @@ const i18n = {
     instructions: "Pick a game below, then adjust the slider to simulate a resale.",
     carouselLabel: "Library",
     carouselTitle: "Pick a game",
+    carouselPrev: "Previous games",
+    carouselNext: "Next games",
     newPriceLabel: "Retail price",
     resaleLabel: "Resale price",
     digitalSplitTitle: "Digital resale",
@@ -296,11 +300,20 @@ export default function App() {
   const [resalePct, setResalePct] = useState(45);
   const [ctxOpen, setCtxOpen] = useState(false);
 
+  const trackRef = useRef(null);
+
   const t = i18n[lang];
 
   useEffect(() => {
     document.documentElement.lang = lang;
   }, [lang]);
+
+  const scrollCarousel = useCallback((dir) => {
+    const el = trackRef.current;
+    if (!el) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    el.scrollBy({ left: dir * el.clientWidth * 0.8, behavior: reduce ? "auto" : "smooth" });
+  }, []);
 
   const basePrice = currency === "EUR" ? selectedGame.eur : selectedGame.usd;
   const resalePrice = useMemo(() => basePrice * (resalePct / 100), [basePrice, resalePct]);
@@ -329,17 +342,33 @@ export default function App() {
             <span className="eyebrow">{t.carouselLabel}</span>
             <h2 className="display">{t.carouselTitle}</h2>
           </div>
-          <div className="carousel-track">
-            {GAMES.map((game, i) => (
-              <GameCard
-                key={game.id}
-                game={game}
-                index={i}
-                selected={selectedGame.id === game.id}
-                onClick={() => setSelectedGame(game)}
-                currency={currency}
-              />
-            ))}
+          <div className="carousel-wrap">
+            <button
+              className="carousel-arrow left"
+              onClick={() => scrollCarousel(-1)}
+              aria-label={t.carouselPrev}
+            >
+              ◀
+            </button>
+            <div className="carousel-track" ref={trackRef}>
+              {GAMES.map((game, i) => (
+                <GameCard
+                  key={game.id}
+                  game={game}
+                  index={i}
+                  selected={selectedGame.id === game.id}
+                  onClick={() => setSelectedGame(game)}
+                  currency={currency}
+                />
+              ))}
+            </div>
+            <button
+              className="carousel-arrow right"
+              onClick={() => scrollCarousel(1)}
+              aria-label={t.carouselNext}
+            >
+              ▶
+            </button>
           </div>
         </section>
 
