@@ -9,7 +9,7 @@ const i18n = {
     titlePart1: "Et si vous pouviez ",
     titleHighlight: "revendre",
     titlePart2: " vos jeux numériques ?",
-    subtitle: "PlayStation supprime le lecteur disque dès janvier 2028. Plus de 350 000 joueurs ont déjà signé contre cette décision. Voici la solution que personne ne propose encore.",
+    subtitle: "PlayStation supprime le disque en 2028. GTA VI sort sans disque en novembre. Le boycott a échoué. Xbox propose le Disc-to-Digital. Et l’éditeur touche toujours 0 € sur la revente.",
     quote: "La valeur ne devrait jamais cesser de circuler. Elle devrait simplement changer de mains, encore et encore.",
     quoteAttribution: "— La thèse du trade-in digital",
     instructions: "Choisissez un jeu ci-dessous, puis ajustez le curseur pour simuler une revente.",
@@ -43,13 +43,16 @@ const i18n = {
     ctxShow: "Contexte & sources",
     ctxHide: "Masquer",
     ctxStat1Value: "5,86 Md€", ctxStat1Label: "Marché FR 2025",
-    ctxStat2Value: "68 %", ctxStat2Label: "Ventes numériques UE",
-    ctxStat3Value: "350K+", ctxStat3Label: "Pétition anti-disc kill",
-    ctxStat4Value: "0 €", ctxStat4Label: "Part éditeur sur l'occasion",
-    ctxParagraph: "Le 1ᵉʳ juillet 2026, PlayStation a annoncé la fin des disques physiques à partir de janvier 2028. Les joueurs perdent leur dernier levier de revente. L'arrêt de la Cour de cassation (octobre 2024, UFC-Que Choisir c/ Valve) confirme qu'aucun droit de revente numérique n'existe aujourd'hui en France. Pourtant la technologie est prête : ce simulateur montre qu'un modèle de trade-in digital avec commission éditeur est non seulement viable, mais plus rentable pour toute l'industrie que l'occasion physique.",
-    ctxSources: "Sources : SELL 2025 · Newzoo · Panel GSD · Cour de cassation, oct. 2024 · PlayStation Blog, 1ᵉʳ juil. 2026",
+    ctxStat2Value: "80 %", ctxStat2Label: "Ventes numériques PS",
+    ctxStat3Value: "88 %", ctxStat3Label: "Part numérique FC 26 sur PS",
+    ctxStat4Value: "1 500+", ctxStat4Label: "Jeux Xbox Disc-to-Digital",
+    ctxStat5Value: "0 €", ctxStat5Label: "Part éditeur sur l’occasion",
+    ctxParagraph: "Le 1ᵉʳ juillet 2026, PlayStation a annoncé l’arrêt des disques physiques pour janvier 2028. Le boycott PSBlackout (23-30 août) n’a eu aucun effet mesurable selon Circana. GTA VI sort le 19 novembre sans disque — juste un code dans la boîte, certains magasins refusent de le vendre. Xbox a lancé Disc-to-Digital le 29 septembre, permettant de convertir ses jeux physiques en licences numériques. Nintendo garde les cartouches sur Switch 2, mais 90 % des jeux tiers sont des codes de téléchargement. La Commission européenne a refusé de légiférer (initiative « Stop Destroying Videogames », juin 2026) mais prépare un code de conduite avec l’industrie.",
+    ctxSources: "Sources : SELL 2025 · Newzoo · Circana · Cour de cassation oct. 2024 · PlayStation Blog juil. 2026 · Xbox Wire août 2026 · The Hollywood Reporter juin 2026 · Commission européenne juin 2026",
     footerBy: "Un concept de",
     footerTagline: "Repenser la seconde vie du jeu vidéo.",
+    tlHeading: "Chronologie",
+    tlSubtitle: "Comment le marché a basculé en 2026",
     ctaHeading: "Vous voulez en discuter ?",
     ctaSubtitle: "Ce modèle vous intéresse ? Contactez-moi.",
     ctaButton: "Me contacter sur LinkedIn",
@@ -61,7 +64,7 @@ const i18n = {
     titlePart1: "What if you could ",
     titleHighlight: "resell",
     titlePart2: " your digital games?",
-    subtitle: "PlayStation is killing the disc drive starting January 2028. Over 350,000 gamers have already signed against it. Here's the solution no one is offering yet.",
+    subtitle: "PlayStation kills the disc in 2028. GTA VI ships with no disc in November. The boycott failed. Xbox offers Disc-to-Digital. And publishers still earn $0 on resale.",
     quote: "Value should never stop moving. It should simply change hands, again and again.",
     quoteAttribution: "— The trade-in digital thesis",
     instructions: "Pick a game below, then adjust the slider to simulate a resale.",
@@ -95,13 +98,16 @@ const i18n = {
     ctxShow: "Context & sources",
     ctxHide: "Hide",
     ctxStat1Value: "$6.4B", ctxStat1Label: "French market 2025",
-    ctxStat2Value: "68%", ctxStat2Label: "Digital sales in the EU",
-    ctxStat3Value: "350K+", ctxStat3Label: "Anti-disc-kill petition",
-    ctxStat4Value: "$0", ctxStat4Label: "Publisher cut on second-hand",
-    ctxParagraph: "On July 1, 2026, PlayStation announced the end of physical discs starting January 2028. Gamers are losing their last resale lever. A French Supreme Court ruling (October 2024, UFC-Que Choisir v. Valve) confirms no digital resale right currently exists in France. Yet the technology is ready: this simulator shows that a digital trade-in model with a publisher commission is not only viable, but more profitable for the whole industry than physical second-hand.",
-    ctxSources: "Sources: SELL 2025 · Newzoo · GSD Panel · French Supreme Court, Oct. 2024 · PlayStation Blog, Jul. 1 2026",
+    ctxStat2Value: "80%", ctxStat2Label: "PS digital sales",
+    ctxStat3Value: "88%", ctxStat3Label: "FC 26 digital share on PS",
+    ctxStat4Value: "1,500+", ctxStat4Label: "Xbox Disc-to-Digital games",
+    ctxStat5Value: "$0", ctxStat5Label: "Publisher cut on resale",
+    ctxParagraph: "On July 1 2026, PlayStation announced the end of physical discs starting January 2028. The PSBlackout boycott (Aug 23-30) had zero measurable impact per Circana. GTA VI launches November 19 with no disc — just a download code in the box, some stores refuse to sell it. Xbox launched Disc-to-Digital on September 29, letting players convert physical games to digital licenses. Nintendo keeps cartridges on Switch 2, but 90% of third-party games are download codes. The EU Commission refused to legislate (Stop Destroying Videogames initiative, June 2026) but is preparing a code of conduct with the industry.",
+    ctxSources: "Sources: SELL 2025 · Newzoo · Circana · French Supreme Court Oct. 2024 · PlayStation Blog Jul. 2026 · Xbox Wire Aug. 2026 · The Hollywood Reporter Jun. 2026 · EU Commission Jun. 2026",
     footerBy: "A concept by",
     footerTagline: "Reimagining the second life of video games.",
+    tlHeading: "Timeline",
+    tlSubtitle: "How the market shifted in 2026",
     ctaHeading: "Want to discuss?",
     ctaSubtitle: "Interested in this model? Let's talk.",
     ctaButton: "Contact me on LinkedIn",
@@ -125,6 +131,60 @@ const GAMES = [
 ];
 
 const SPLIT = { seller: 0.7, publisher: 0.2, platform: 0.1 };
+
+/* ═══════════════════ TIMELINE ═══════════════════ */
+const TIMELINE = [
+  {
+    color: "purple",
+    fr: { date: "Juin 2026", title: "L’UE refuse de légiférer", desc: "La Commission européenne rejette l’initiative « Stop Destroying Videogames » (1,3M de signatures) mais annonce un code de conduite." },
+    en: { date: "Jun 2026", title: "EU refuses to legislate", desc: "The EU Commission rejects the ‘Stop Destroying Videogames’ initiative (1.3M signatures) but announces a code of conduct." },
+  },
+  {
+    color: "gold",
+    fr: { date: "25 juin 2026", title: "GTA VI : précommandes sans disque", desc: "Rockstar ouvre les précommandes de GTA VI. La « version physique » ne contient qu’un code de téléchargement. Certains magasins refusent de le vendre." },
+    en: { date: "Jun 25 2026", title: "GTA VI: pre-orders with no disc", desc: "Rockstar opens GTA VI pre-orders. The ‘physical version’ contains only a download code. Some stores refuse to sell it." },
+  },
+  {
+    color: "coral",
+    fr: { date: "1ᵉʳ juil. 2026", title: "PlayStation tue le disque", desc: "Sony annonce la fin des disques physiques pour tous les nouveaux jeux PlayStation à partir de janvier 2028. Le même jour, fermeture annoncée des PS Store PS3/Vita pour juillet 2027." },
+    en: { date: "Jul 1 2026", title: "PlayStation kills the disc", desc: "Sony announces the end of physical discs for all new PlayStation games starting January 2028. Same day, PS3/Vita store closure announced for July 2027." },
+  },
+  {
+    color: "coral",
+    fr: { date: "31 juil. 2026", title: "Sony ne recule pas", desc: "La directrice financière Lin Tao confirme la décision lors de l’appel investisseurs. 80 % des ventes PS sont déjà numériques." },
+    en: { date: "Jul 31 2026", title: "Sony stands firm", desc: "CFO Lin Tao confirms the decision during earnings call. 80% of PS sales are already digital." },
+  },
+  {
+    color: "coral",
+    fr: { date: "23-30 août 2026", title: "Boycott PSBlackout", desc: "Le collectif Does It Play appelle à une semaine de boycott. Résultat : aucun impact mesurable selon Circana." },
+    en: { date: "Aug 23-30 2026", title: "PSBlackout boycott", desc: "The Does It Play collective calls for a week-long boycott. Result: zero measurable impact per Circana." },
+  },
+  {
+    color: "teal",
+    fr: { date: "26 août 2026", title: "Xbox lance Disc-to-Digital", desc: "Microsoft annonce un programme de conversion physique → numérique à la Gamescom. La licence numérique reste attachée au disque : si on le revend, le droit suit." },
+    en: { date: "Aug 26 2026", title: "Xbox launches Disc-to-Digital", desc: "Microsoft announces a physical-to-digital conversion program at Gamescom. The digital license stays tied to the disc: if you sell it, the right transfers." },
+  },
+  {
+    color: "teal",
+    fr: { date: "29 sept. 2026", title: "Disc-to-Digital ouvert à tous", desc: "Le programme Xbox Disc-to-Digital est généralisé. Plus de 1 500 jeux compatibles confirmés par la communauté." },
+    en: { date: "Sep 29 2026", title: "Disc-to-Digital open to all", desc: "Xbox Disc-to-Digital rolls out to everyone. Over 1,500 compatible games confirmed by the community." },
+  },
+  {
+    color: "purple",
+    fr: { date: "12 oct. 2026", title: "Trois stratégies, trois camps", desc: "Nintendo confirme garder les cartouches sur Switch 2. Mais 90 % des jeux tiers restent des codes de téléchargement. Sony tue le disque, Xbox propose la transition, Nintendo garde le physique — en surface." },
+    en: { date: "Oct 12 2026", title: "Three strategies, three camps", desc: "Nintendo confirms keeping cartridges on Switch 2. But 90% of third-party games remain download codes. Sony kills the disc, Xbox offers transition, Nintendo keeps physical — on the surface." },
+  },
+  {
+    color: "gold",
+    fr: { date: "19 nov. 2026", title: "Sortie de GTA VI", desc: "Le plus gros lancement de l’histoire du jeu vidéo. Sans disque. Le « code in the box » à 79,99 € devient la nouvelle norme." },
+    en: { date: "Nov 19 2026", title: "GTA VI launches", desc: "The biggest launch in gaming history. No disc. The ‘code in the box’ at $69.99 becomes the new normal." },
+  },
+  {
+    color: "coral",
+    fr: { date: "Janv. 2028", title: "Fin des disques PlayStation", desc: "Date butoir annoncée par Sony. Plus aucun nouveau jeu PlayStation ne sortira sur disque." },
+    en: { date: "Jan 2028", title: "End of PlayStation discs", desc: "Sony’s announced deadline. No new PlayStation game will ship on disc." },
+  },
+];
 
 function formatMoney(value, currency) {
   const locale = currency === "EUR" ? "fr-FR" : "en-US";
@@ -481,6 +541,25 @@ export default function App() {
           </ul>
         </section>
 
+        <section className="timeline-section">
+          <div className="timeline-card">
+            <h2 className="display timeline-heading">{t.tlHeading}</h2>
+            <p className="timeline-subtitle">{t.tlSubtitle}</p>
+            <ol className="timeline">
+              {TIMELINE.map((ev, i) => (
+                <li key={i} className={`timeline-item ${ev.color}`}>
+                  <span className="timeline-dot" aria-hidden="true" />
+                  <span className="timeline-date mono">{ev[lang].date}</span>
+                  <div className="timeline-body">
+                    <h3 className="timeline-title">{ev[lang].title}</h3>
+                    <p className="timeline-desc">{ev[lang].desc}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
         <section className="contact-cta">
           <h2 className="display cta-heading">{t.ctaHeading}</h2>
           <p className="cta-subtitle">{t.ctaSubtitle}</p>
@@ -506,6 +585,7 @@ export default function App() {
                 <div><span className="stat-value mono">{t.ctxStat2Value}</span><span className="stat-label">{t.ctxStat2Label}</span></div>
                 <div><span className="stat-value mono">{t.ctxStat3Value}</span><span className="stat-label">{t.ctxStat3Label}</span></div>
                 <div><span className="stat-value mono">{t.ctxStat4Value}</span><span className="stat-label">{t.ctxStat4Label}</span></div>
+                <div><span className="stat-value mono">{t.ctxStat5Value}</span><span className="stat-label">{t.ctxStat5Label}</span></div>
               </div>
               <p className="context-p">{t.ctxParagraph}</p>
               <p className="context-sources mono">{t.ctxSources}</p>
