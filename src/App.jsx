@@ -216,6 +216,14 @@ function ToggleGroup({ options, value, onChange }) {
 
 function TopBar({ lang, setLang, currency, setCurrency, t }) {
   const [copied, setCopied] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 4);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (!copied) return;
@@ -236,7 +244,7 @@ function TopBar({ lang, setLang, currency, setCurrency, t }) {
   }, []);
 
   return (
-    <header className="topbar">
+    <header className={`topbar${scrolled ? " scrolled" : ""}`}>
       <div className="logo">
         <span className="logo-icon" aria-hidden="true">
           <span className="logo-arrow">↗</span>

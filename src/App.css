@@ -26,6 +26,10 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 72px;
+}
+
 body {
   background-color: var(--cream);
   background-image:
@@ -38,7 +42,7 @@ body {
   min-height: 100vh;
   font-family: var(--font);
   color: var(--text);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .mono {
@@ -75,9 +79,16 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
-  background: rgba(246, 240, 230, 0.85);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--card-border);
+  background: rgba(246, 240, 230, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.topbar.scrolled {
+  border-bottom-color: var(--card-border);
+  box-shadow: 0 4px 18px rgba(23, 29, 53, 0.08);
 }
 
 .logo {
